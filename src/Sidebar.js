@@ -12,7 +12,7 @@ import SidebarRow from './SidebarRow';
 function Sidebar() {
     return (
         <div className="sidebar">
-            <SidebarRow src="" title='Parin Limbu' />
+            <SidebarRow src="https://photos.google.com/photo/AF1QipMEP_3Fr9vM0WHOY7qGbAp2WqKZj6vPITutKhLe" title='Parin Limbu' />
             <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
             <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
             <SidebarRow Icon={PeopleIcon} title="Friends" />
