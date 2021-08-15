@@ -3,7 +3,7 @@ import React from 'react';
 import './MessageSender.css';
 import VideocamIcon from "@material-ui/icons/Videocam";
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'; 
 
 function MessageSender() {
 
@@ -33,6 +33,16 @@ function MessageSender() {
                 <div className="messageSender__option">
                     <VideocamIcon style={{color: "red" }}/>
                     <h3>Live Video</h3>
+                </div>
+
+                <div className="messageSender__option">
+                    <PhotoLibraryIcon style={{color: "green"}}/>
+                    <h3>Photo/Video</h3>
+                </div>
+
+                <div className="messageSender__option">
+                    <InsertEmoticonIcon style={{color: "orange"}}/>
+                    <h3>Feeling/Activity</h3>
                 </div>
             </div>
         </div>
