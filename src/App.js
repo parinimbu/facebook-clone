@@ -3,7 +3,7 @@ import Header from './Header';
 import './App.css';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
-
+import Widgets from './Widgets';
 function App() {
   // BEM naming convention
   return (
@@ -15,9 +15,7 @@ function App() {
 
         <Feed />
 
-        {/* Feeds */}
-
-        {/* Widgets */}
+        <Widgets />
       
       </div>   
     </div>
