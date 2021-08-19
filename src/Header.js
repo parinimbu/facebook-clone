@@ -12,12 +12,13 @@ import ForumIcon from "@material-ui/icons/Forum";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+
 function Header() {
     return (
         <div className="header">
             <div className='header__left'>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt=""
+            <Avatar
+              src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/one-1.jpg" alt=""
             />  
             
             <div className="header__input">
@@ -53,7 +54,7 @@ function Header() {
 
             <div className='header__right'>
                 <div className='header__info'>
-                    <Avatar />
+                    <Avatar src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/one-1.jpg"/>
                     <h4>Parin Limbu</h4>
                 </div>
 
