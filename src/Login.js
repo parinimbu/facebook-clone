@@ -18,13 +18,13 @@ function Login() {
                     src="https://www.logo.wine/a/logo/Facebook/Facebook-Logo.wine.svg"
                     alt=""
                 />
+            </div>
 
-                <Button type="submit" onClick={signIn}>
+            <Button type="submit" onClick={signIn}>
                     Sign In
                 </Button>
-            </div>
         </div>
-    )
+    );
 }
 
 export default Login
