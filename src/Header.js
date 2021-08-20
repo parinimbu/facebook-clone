@@ -18,7 +18,7 @@ function Header() {
         <div className="header">
             <div className='header__left'>
             <Avatar
-              src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/one-1.jpg" alt=""
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt=""
             />  
             
             <div className="header__input">
