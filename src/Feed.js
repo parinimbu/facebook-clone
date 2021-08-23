@@ -9,7 +9,7 @@ function Feed() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        db.collection('posts').onSnapshot((snapshot) => (
+        db.collection('posts').orderBy("timestamp", "desc").onSnapshot((snapshot) => (
             setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data()})))
         ))
     }, [])
@@ -17,13 +17,16 @@ function Feed() {
         <div className="feed">
             <StoryReel />
             <MessageSender />
-            <Post
-                profilePic="https://static3.cbrimages.com/wordpress/wp-content/uploads/2021/06/tokyo-revengers-one-piece.jpg"
-                message="this works"
-                timestamp="timestamp"
-                username="parin"
-                image="https://akibamarket.com/wp-content/uploads/2021/06/73233-el-manga-tokyo-revengers-supera-20-millones-de-copias-en-circulacion.jpg"
-            />
+            {posts.map((post) => (
+                <Post
+                key={post.id}
+                profilePic={post.data.profilePic}
+                message={post.data.message}
+                timestamp={post.data.timestamp}
+                username={post.data.username}
+                image={post.data.image}
+                />
+            ))}
         </div>
     )
 }
