@@ -2,3 +2,13 @@
     padding: 25px 10px;
     flex: 0.33;
 }
+
+.sidebar__top{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.sidebar__top > h4 {
+    margin-left: 10px;
+}

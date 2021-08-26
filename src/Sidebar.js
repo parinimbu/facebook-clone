@@ -9,14 +9,17 @@ import React from 'react';
 import "./Sidebar.css";
 import SidebarRow from './SidebarRow';
 import { useStateValue } from "./StateProvider";
+import { Avatar } from '@material-ui/core';
 
 function Sidebar() {
 
-    const [{ user }, dispatch ] = useStateValue();  
+    const [{user}, dispatch ] = useStateValue();  
      return (
         <div className="sidebar">
-            <SidebarRow src={user.photoURL} 
-                title= {user.displayName} />
+            <div className='sidebar__top'>
+                <Avatar src={user.photoURL} />
+                <h4>{user.displayName}</h4>
+            </div>
             <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
             <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
             <SidebarRow Icon={PeopleIcon} title="Friends" />
